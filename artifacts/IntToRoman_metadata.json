@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/task1/05 MergeSortedArray.sol": "IntToRoman"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/task1/05 MergeSortedArray.sol": {
+			"keccak256": "0xa4649165ef1c820c176e1e4be7e46054105ff2147f3b4349c34da6020f715b51",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b32582b7cb7f6f0bece1952ba8f0d7dd0a853ff7feb1878645207171b9d49fb7",
+				"dweb:/ipfs/QmZFXvo5HCq9Q1o72EMbm99qWMHqwssQcTdKRZtjxPuNbH"
+			]
+		}
+	},
+	"version": 1
+}

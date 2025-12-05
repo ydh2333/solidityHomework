@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/task1/06 BinarySearch.sol": "MergeSortedArray"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/task1/06 BinarySearch.sol": {
+			"keccak256": "0xf8567a4c09c31154f5ad4cd119f30a8b8487a9b6d2bd5e9e30d813c5cc33e7ac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7ca6b2f298e75c8d584b7771f6f39202474e1e51b09cdbc237225ae44cee4b4c",
+				"dweb:/ipfs/QmP2bd6rCYxUMAh7gxtujX4E1Qr7J9WDpLj6GXVHYv55JF"
+			]
+		}
+	},
+	"version": 1
+}
