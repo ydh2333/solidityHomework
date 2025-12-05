@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/task1/01 Voting.sol": "HelloWorld"
+			"contracts/task1/01 Voting.sol": "Voting"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/task1/01 Voting.sol": {
-			"keccak256": "0xd6ac5ded4c10aa3d51f408b802b1433909886ccec1ce1b1adbf1487f65e36c1e",
+			"keccak256": "0x1aa32b835940c35b50ce9cfaf98316b25f6386feb6a328f3de5167770e8df91c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9ae1bb16a5950ab32a7cd25d936d937ad06edf1cac5de9a1f5607204f21b1ec7",
-				"dweb:/ipfs/QmNPEkTAdnyVPTbBWxzyxFSdugNsnFh4jtKA9RtzNeNDaq"
+				"bzz-raw://c5a8c8c5f40c92d1f923311d8f826eee913bb5f5567f8197ec154f7fdc5fc923",
+				"dweb:/ipfs/QmYstG2Uw85HTdSoRjKjtb2RYy9pZZAyQ4kKuzvohiiUkd"
 			]
 		}
 	},
