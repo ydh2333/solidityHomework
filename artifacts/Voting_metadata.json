@@ -4,7 +4,104 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "roles",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voteCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voteExist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -20,7 +117,7 @@
 		"compilationTarget": {
 			"contracts/task1/01 Voting.sol": "Voting"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -33,11 +130,11 @@
 	},
 	"sources": {
 		"contracts/task1/01 Voting.sol": {
-			"keccak256": "0x1aa32b835940c35b50ce9cfaf98316b25f6386feb6a328f3de5167770e8df91c",
+			"keccak256": "0x34d063d8a2aafa4c2ab518f6a0d493ada7059d3d5493f826bf92deb14a8582c4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c5a8c8c5f40c92d1f923311d8f826eee913bb5f5567f8197ec154f7fdc5fc923",
-				"dweb:/ipfs/QmYstG2Uw85HTdSoRjKjtb2RYy9pZZAyQ4kKuzvohiiUkd"
+				"bzz-raw://4dcc586c988f397eda8e757c8116dc01525fb0195f7ac9d3dc6c322d2aa75b6a",
+				"dweb:/ipfs/QmQ4rQhj9tobacbGz4mpQtuF59pabSmNKARwnsNUZoHvQ7"
 			]
 		}
 	},
