@@ -4,10 +4,10 @@ pragma solidity ^0.8.19;
 contract MyERC20 {
     string public name="Young Token";
     string public symbol="YTK";
-    uint public decimal = 18;
+    uint8 public decimal = 18;
     uint256 public totalSupply;
     address public owner;
-    bool public pauseState = false;
+    // bool public pauseState = false;
 
     // 余额
     mapping (address=>uint256) public balanceOf;
@@ -27,18 +27,18 @@ contract MyERC20 {
     }
 
 
-    modifier onlyOwener(){
+    modifier onlyOwner(){
         require(msg.sender == owner, "Only Owner");
         _;
     }
 
-    modifier isPaused(){
-        require(!pauseState,"Transfer paused");
-        _;
-    }
+    // modifier isPaused(){
+    //     require(!pauseState,"Transfer paused");
+    //     _;
+    // }
 
     // 转账
-    function transfer(address _to, uint256 _amount) public isPaused returns (bool){
+    function transfer(address _to, uint256 _amount) public returns (bool){
         // 零地址判定
         require(_to != address(0), "Zero address");
         // 判断转账者金额是否充足
@@ -52,7 +52,7 @@ contract MyERC20 {
     }
 
     // 授权
-    function approval(address _spender, uint256 _amount) public isPaused returns (bool){
+    function approval(address _spender, uint256 _amount) public returns (bool){
         require(_spender != address(0), "Zero address");
 
         allowance[msg.sender][_spender] = _amount;
@@ -62,7 +62,7 @@ contract MyERC20 {
     }
 
     // 授权转账
-    function transferForm(address _from, address _to, uint256 _amount) public isPaused returns (bool){
+    function transferForm(address _from, address _to, uint256 _amount) public returns (bool){
         require(_from != address(0), "From is zero address");
         require(_to != address(0), "To is zero address");
         require(balanceOf[_from] >= _amount, "Insufficient balance");
@@ -77,7 +77,7 @@ contract MyERC20 {
     }
 
     // 铸造货币
-    function mint(address _to, uint256 _amount) public isPaused onlyOwener{
+    function mint(address _to, uint256 _amount) public onlyOwner{
         require(_to != address(0), "Zero address");
 
         totalSupply += _amount;
@@ -87,7 +87,7 @@ contract MyERC20 {
     }
 
     // 销毁货币
-    function burn(uint256 _amount) public isPaused {
+    function burn(uint256 _amount) public {
         require(balanceOf[msg.sender] >= _amount, "Insufficient balance");
 
         totalSupply -= _amount;
@@ -97,7 +97,7 @@ contract MyERC20 {
     }
 
     // 批量转账
-    function batchTransfer(address[] memory _recipients, uint256[] memory _amounts) public isPaused returns (bool){
+    function batchTransfer(address[] memory _recipients, uint256[] memory _amounts) public returns (bool){
         require(_recipients.length==_amounts.length, "Unequal lengths");
         // 检查数组长度
         require(_recipients.length <= 3, "Length is limited");
@@ -119,17 +119,18 @@ contract MyERC20 {
         return true;
     }
 
-    function pause() public onlyOwener returns (bool){
-        require(!pauseState, "The state is paused");
-        pauseState = true;
-        return pauseState;
-    }
+    // ERC20不需要Pause功能
+    // function pause() public onlyOwner returns (bool){
+    //     require(!pauseState, "The state is paused");
+    //     pauseState = true;
+    //     return pauseState;
+    // }
 
-        function unpause() public onlyOwener returns (bool){
-        require(pauseState, "The state is not paused");
-        pauseState = false;
-        return pauseState;
-    }
+    //     function unpause() public onlyOwner returns (bool){
+    //     require(pauseState, "The state is not paused");
+    //     pauseState = false;
+    //     return pauseState;
+    // }
 
 }
 

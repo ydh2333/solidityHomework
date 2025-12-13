@@ -310,7 +310,7 @@
 		"compilationTarget": {
 			"contracts/task2/03 job3.sol": "BeggingContract"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
